@@ -39,8 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  final Uri _url = Uri.parse('https://flutter.dev');
-
   Future<void> _launchURL(String url) async {
     if (!await launchUrl(Uri.parse(url))) {
       throw Exception('Could not launch $url');
